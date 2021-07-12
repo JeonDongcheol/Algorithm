@@ -189,4 +189,4 @@ n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> **O(1)**
 - [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
 - [https://noahlogs.tistory.com/27](https://noahlogs.tistory.com/27)
 
-[big_o_complexity]:https://imgur.com/a/BQKjpO7.png
+[big_o_complexity]:https://i.imgur.com/SAcM4Dj.png
