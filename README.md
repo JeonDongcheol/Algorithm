@@ -77,15 +77,30 @@ Case 2의 연삿 횟수 _2n + 1_ 에 추가로 루프 제어문의 연산인 _2n
 |빅오 표기법|1|4|8|32|
 |:----:|:-----:|:-----:|:----:|:-----:|
 |O(1)|1|1|1|1|
-|O(logn)|0|2|3|5|
+|O(log n)|0|2|3|5|
 |O(n)|1|4|8|32|
-|O(nlogn)|2|8|24|160|
+|O(nlog n)|2|8|24|160|
 |O(n^2)|1|16|64|1,024|
 |O(n^3)|1|64|512|32,768|
 |O(2^n)|2|16|256|4,294|
 |O(n!)|1|24|40,326|26,313 x 10^33|
 
------------------
+- 빅오 표기법의 예제
+
+1. **O(1)** : 스택에서 Push, Pop
+
+2. **O(log n)** : 이진트리
+
+3. **O(n)** : for 문
+
+4. **O(n log n)** : 퀵 정렬(quick sort), 병합정렬(merge sort), 힙 정렬(heap Sort)
+
+5. **O(n^2)** : 이중 for 문, 삽입정렬(insertion sort), 거품정렬(bubble sort), 선택정렬(selection sort)
+
+6. **O(2^n)** : 피보나치 수열
+
+
+-------------------
 
 ### 3. 최선, 평균, 최악의 경우(Best, Average, Worst Cases) <a name = "i3"/>
 
@@ -171,3 +186,4 @@ n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> **O(1)**
 #### Reference :
 
 - [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
+- [https://noahlogs.tistory.com/27](https://noahlogs.tistory.com/27)
