@@ -85,7 +85,7 @@ Case 2의 연삿 횟수 _2n + 1_ 에 추가로 루프 제어문의 연산인 _2n
 |O(2^n)|2|16|256|4,294|
 |O(n!)|1|24|40,326|26,313 x 10^33|
 
-![Alt Text][Big_O_Complexity]
+![Alt Text][big_o_complexity]
 
 - 빅오 표기법의 예제
 
@@ -100,7 +100,6 @@ Case 2의 연삿 횟수 _2n + 1_ 에 추가로 루프 제어문의 연산인 _2n
 5. **O(n^2)** : 이중 for 문, 삽입정렬(insertion sort), 거품정렬(bubble sort), 선택정렬(selection sort)
 
 6. **O(2^n)** : 피보나치 수열
-
 
 -------------------
 
@@ -190,4 +189,4 @@ n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> **O(1)**
 - [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
 - [https://noahlogs.tistory.com/27](https://noahlogs.tistory.com/27)
 
-[Big_O_Complexity]:https://imgur.com/a/BQKjpO7.png
+[big_o_complexity]:https://imgur.com/a/BQKjpO7.png
