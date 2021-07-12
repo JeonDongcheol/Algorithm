@@ -91,4 +91,4 @@ Case 2의 연삿 횟수 2n + 1에 추가로 루프 제어문의 연산인 2n + 2
 
 #### Reference :
 
-- [https://madplay.github.io/post/time-complexity-space-complexity] (https://madplay.github.io/post/time-complexity-space-complexity)
+- [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
