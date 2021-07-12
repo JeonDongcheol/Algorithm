@@ -10,7 +10,7 @@ Algorithm 기본 정리
 1. [__Time Complexity__](#i1)
 2. [__Big O notation__](#i2)
 3. [__Best, Average, Worst Cases__](#i3)
-4. [__MongoDB__](#i4)
+4. [__Space Complexity__](#i4)
 
 #### Link :
 1. [__Tutorial__](./example2/README.md)
@@ -170,4 +170,4 @@ n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> O(1)
 
 #### Reference :
 
-- [https://madplay.github.io/post/time-complexity-space-complexity] (https://madplay.github.io/post/time-complexity-space-complexity)
+- [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
