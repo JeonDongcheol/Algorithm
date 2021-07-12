@@ -9,8 +9,8 @@ Algorithm 기본 정리
 #### Index :
 1. [__Time Complexity__](#i1)
 2. [__Big O notation__](#i2)
-3. [__MVC Pattern__](#i5)
-4. [__MongoDB__](#i3)
+3. [__Best, Average, Worst Cases__](#i3)
+4. [__MongoDB__](#i4)
 
 #### Link :
 1. [__Tutorial__](./example2/README.md)
@@ -89,6 +89,85 @@ Case 2의 연삿 횟수 2n + 1에 추가로 루프 제어문의 연산인 2n + 2
 |O(2^n)|2|16|256|4,294|
 |O(n!)|1|24|40,326|26,313 x 10^33|
 
+### 3. 최선, 평균, 최악의 경우(Best, Average, Worst Cases) <a name = "i3"/>
+
+동일한 알고리즘도 입력되는 데이터에 따라 실행 시간이 다를 수 있음
+
+ex) 정렬하는 알고리즘에 대부분 정렬이 완료 되어있는 데이터를 입력한다면, 뒤죽박죽 섞여있는 데이터보다 정렬 속도가 더 빠를 것
+
+따라서 **알고리즘의 효율성** 은 입력되는 데이터의 집합에 따라 3가지의 경우로 나누어 평가
+
+- **최선의 경우 (Best Case)** : 실행 시간이 가장 적은 경우
+- **평균적인 경우 (Average Case)** : 모든 입력을 고려하고 각 입력이 발생하는 확률을 고려한 평균 수행 시간
+- **최악의 경우 (Worst Case)** : 알고리즘의 수행 시간이 가장 오래 걸리는 경우
+
+광범위한 데이터 집합에 대하여 알고리즘을 적용시켜 평균 값을 계싼하는 것은 매우 어렵기 때문에 시간 복잡도의 척도를 계산할 때는 보통 **최악의 경우 (Worst Case)** 를 주로 사용
+
+#### Example
+
+정렬되지 않은 배열을 순차적으로 탐색하여 특정한 값을 찾는 경우
+
+```
+int sequencialSearch(int list[], int n, int key) {
+	int i;
+	for(i = 0; i < n; i++) {
+		if(list[i] == key) {
+			return i; //탐색에 성공하면 키 값의 Index 반환
+		}
+	}
+	return -1; //탐색에 실패하면 -1 반환
+}
+```
+
+|값(Value)|위치(Index)|
+|:-----:|:-----:|
+|5|0|
+|8|1|
+|9|2|
+|15|3|
+|23|4|
+|48|5|
+|7|6|
+
+- Best Case : 찾으려는 값이 배열의 가장 처음에 있는 경우 -> **O(1)**
+- Worst Case : 찾으려는 값이 배열의 가장 마지막에 있는 경우 -> **O(n)**
+
+### 4. 공간 복잡도 (Sapce Complexity) <a name = "i4"/>
+
+프로그램을 실행시킨 후 완료하는 데 필요로 하는 자원 공간의 양
+
+```
+총 공간 요구 = 고정 공간 요구 + 가변 공간 요구
+S(P) = c + Sp(n)
+```
+
+- **고정 공간** : 입력과 출력의 횟수나 크게와 관계 없는 공간의 요구 (ex : 코드 저장 공간, 단순 변수, 고정 크기의 구조 변수, 상수...)
+- **가변 공간** : 해결하려는 문제의 특정 인스턴스에 의존하는 크기를 가진 구조화 변수들을 위해서 필요로 하는 공간, 동적으로 필요한 공간 (ex : 함수가 순환 호출을 할 경우 요구되는 추가 공간...)
+
+#### Example
+
+```
+int factorial(int n) {
+	if(n > 1) return n * factorial(n - 1);
+	else return 1;
+}
+```
+
+n이 1 이하일 때까지 함수가 재귀적으로 호출되므로, 스택에는 n부터 1까지 모두 쌓임 -> O(n)
+
+```
+int factorial(int i) {
+	int i = 0;
+	int fac = 1;
+	for(i = 1; i <= n; i++) {
+		fac = fac * i;
+	}
+	return fec;
+}
+```
+
+n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> O(1)
+
 #### Reference :
 
-- [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
+- [https://madplay.github.io/post/time-complexity-space-complexity] (https://madplay.github.io/post/time-complexity-space-complexity)
