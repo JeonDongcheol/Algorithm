@@ -5,16 +5,11 @@ Algorithm 기본 정리
 
 > Algorithm에서 사용되는 기본적인 개념에 대한 정리
 
-
 #### Index :
 1. [__Time Complexity__](#i1)
 2. [__Big O notation__](#i2)
 3. [__Best, Average, Worst Cases__](#i3)
 4. [__Space Complexity__](#i4)
-
-#### Link :
-1. [__Tutorial__](./example2/README.md)
-2. [__Graduation Project__](./graduation/README.md)
 
 ### 1. 시간 복잡도(Time Complexity) <a name="i1"/>
 
