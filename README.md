@@ -85,6 +85,8 @@ Case 2의 연삿 횟수 _2n + 1_ 에 추가로 루프 제어문의 연산인 _2n
 |O(2^n)|2|16|256|4,294|
 |O(n!)|1|24|40,326|26,313 x 10^33|
 
+![Alt Text][Big_O_Complexity]
+
 - 빅오 표기법의 예제
 
 1. **O(1)** : 스택에서 Push, Pop
@@ -187,3 +189,5 @@ n의 값에는 상관없이 스택에는 n, i, fac 변수만 저장 -> **O(1)**
 
 - [https://madplay.github.io/post/time-complexity-space-complexity](https://madplay.github.io/post/time-complexity-space-complexity)
 - [https://noahlogs.tistory.com/27](https://noahlogs.tistory.com/27)
+
+[Big_O_Complexity]:https://imgur.com/a/BQKjpO7.png
